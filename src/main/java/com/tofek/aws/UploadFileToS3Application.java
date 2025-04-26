@@ -22,8 +22,8 @@ public class UploadFileToS3Application {
 
 	@Bean("S3Client")
 	public S3Client makeConnection(){
-		String accessKey = "AKIAUYBR4NCZDLTKIWMH";
-		String secretKey = "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";
+		String accessKey = "<<secret-key>>";
+		String secretKey = "<<secret-key-pass>>";
 		String regionName = "us-east-2";
 		AwsCredentials credentials = AwsBasicCredentials.create(accessKey, secretKey);
 
