@@ -34,5 +34,4 @@ public class UploadFileToS3Application {
 
 		return s3Client;
 	}
-
 }
