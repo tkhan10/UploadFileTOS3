@@ -46,7 +46,7 @@ jobs:
     - name: Build, tag, and push docker image to Amazon ECR
       env:
         REGISTRY: tkhan10
-        REPOSITORY: UploadFileTOS3
+        REPOSITORY: uploadfiletos3
         IMAGE_TAG: v1
       run: |
         docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG .
