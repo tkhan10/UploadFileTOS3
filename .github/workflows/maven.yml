@@ -34,9 +34,9 @@ jobs:
       with:
         role-to-assume: arn:aws:iam::326522136754:role/tofek_ecs_full_access
         aws-region: us-east-2
-        mask-aws-account-id: 'false'
+        mask-aws-account-id: 'true'
     - name: Login to Amazon ECR
       id: login-ecr
       uses: aws-actions/amazon-ecr-login@v2
       with:
-        mask-password: 'false'
+        mask-password: 'true'
